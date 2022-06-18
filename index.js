@@ -12,7 +12,7 @@ moongose.connect("mongodb://localhost:27017/portafolio").then(res => {
     //servercreation
 
     app.listen(PORT,() => {
-        console.log("server init correct");
+        console.log("server initialize correct");
     })
 
 }).catch((error) => {
