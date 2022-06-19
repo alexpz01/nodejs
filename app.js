@@ -1,8 +1,8 @@
 
 var express = require("express");
 var bp = require("body-parser");
-
 var app = express();
+var projectRoutes = require("./routes/project")
 
 //routes
 
@@ -12,8 +12,7 @@ app.get("/", (req, res) => {
 
 //middlewares
 
-/*app.use(bp.urlencoded({extended: false}))
-app.use(bp.json())*/
+app.use("/api", projectRoutes);
 
 //CORS
 
